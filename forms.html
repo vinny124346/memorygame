@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Memory Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class='font-sans [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'>
+
+
+  <div class='container mx-auto mb-10'>
+
+    <div class='text-white text-center'>
+      <h1 class="text-3xl">Dynamic Forms</h1>
+      <p class='italic'>good luck</p>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4">
+      <form id='userForm' class='p-4 col-span-2'>
+        <!-- self-closing tags -->
+        <div>
+          <input type='text' placeholder='Enter your name' class='px-2 py-1 rounded text-black m-2' id='username' />
+          <input type="text" placeholder="Enter image URL" class='px-2 py-1 rounded text-black m-2' id="picture" />
+        </div>
+        <div>
+          <textarea class='px-2 py-1 rounded text-black bg-gray-400 m-2 shadow-sm shadow-emerald-400'
+            placeholder='Enter your review' id='userReview'></textarea>
+          <p class="text-white text-sm mt-1 p-1">Max 200 characters</p>
+        </div>
+        <button class="rounded-md text-white font-bold px-2 py-1 border border-indigo-400 hover:bg-[#351A7A]"
+          type='submit'>
+          Submit
+        </button>
+      </form>
+
+    </div>
+
+    <div id='userFeedback' class=' bg-gray-950 text-black rounded-md w-full flex flex-col col-span-1'>
+      <!-- generated information based on what the user types in -->
+    </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
